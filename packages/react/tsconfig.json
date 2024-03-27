@@ -1,0 +1,4 @@
+{
+  "extends": "@flex-ui/ts-config/react.json",
+  "include": ["src", "src/stories"]
+}

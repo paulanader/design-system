@@ -1,0 +1,51 @@
+{
+  "name": "@flex-ui/react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --watch --external react",
+    "lint": "eslint src/**/*.ts* --fix",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "deploy-storybook": "storybook-to-ghpages"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@flex-ui/eslint-config": "*",
+    "@flex-ui/tokens": "*",
+    "@flex-ui/ts-config": "*",
+    "@storybook/addon-essentials": "^7.6.17",
+    "@storybook/addon-interactions": "^7.6.17",
+    "@storybook/addon-links": "^7.6.17",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "^7.6.17",
+    "@storybook/react": "^7.6.17",
+    "@storybook/react-vite": "^7.6.17",
+    "@storybook/storybook-deployer": "^2.8.16",
+    "@storybook/test": "^7.6.17",
+    "@types/react": "^18.2.63",
+    "@types/react-dom": "^18.2.20",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint-plugin-storybook": "^0.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.6.17",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.5"
+  },
+  "dependencies": {
+    "@radix-ui/react-avatar": "^1.0.4",
+    "@radix-ui/react-checkbox": "^1.0.4",
+    "@stitches/react": "^1.2.8",
+    "@storybook/addon-a11y": "^8.0.4",
+    "phosphor-react": "^1.4.1",
+    "polished": "^4.3.1"
+  }
+}
